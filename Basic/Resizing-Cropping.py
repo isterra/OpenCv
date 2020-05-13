@@ -1,6 +1,6 @@
 import cv2
 
-img= cv2.imread("Resources/lambo.PNG")
+img= cv2.imread("../Resources/lambo.PNG")
 print(img.shape)
 imgResize =  cv2.resize(img,(300,200))
 imgCropped = img[0:200,200:500]
