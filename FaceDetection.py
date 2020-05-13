@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 faceCascade=cv2.CascadeClassifier("Resources/haarcascade_frontalface_default.xml")
-img= cv2.imread('Resources/peoples.jpg')
+img= cv2.imread('Resources/face.jpeg')
 imgGray=cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
 
 faces=faceCascade.detectMultiScale(imgGray,1.1,4)
